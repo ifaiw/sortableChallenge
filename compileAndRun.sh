@@ -3,7 +3,8 @@
 if [ "$#" -eq 1 ] || [ "$#" -gt 2 ]; then
 	echo "To run: compileAndRun.sh [ProductsFile ListingsFile]"
 	echo "If ProductsFile and ListingsFile aren't specified, will try to use products.txt and listings.txt"
-	exit -1
+	echo "Results will be written to output.txt"
+    exit -1
 fi
 
 if [ $# -eq 2 ]; then
